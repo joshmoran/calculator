@@ -1,6 +1,6 @@
 # Calculator App
 
-> A simple calculator created using ReactJS 
+# A simple calculator created using ReactJS 
 
 ## Index 
 1. Features
