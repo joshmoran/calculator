@@ -1,71 +1,37 @@
-# Getting Started with Create React App
+# Calculator App
+> # A simple calculator created using ReactJS 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Index 
+1. Features
+2. Error handling
 
-## Available Scripts
+## 1. Features
+- Basic sums
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division
+- 10 Number buttons - 0 to 9
+- Other buttons 
+  - Add 0 
+  - Add 00
+  - Delete last character (DC button)
+  - Clear calculation (AC button)
+  - Point - for floating point calculations
+  - Calculate button (= button)
+- Box output boxes
+  - First: Last calculation to be calculated
+  - Second: current input from the user
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# calculator
+## 2. Error Handling 
+- Delete last character button (DC button)
+  - On empty, nothing is inserted and no errors are being thrown
+  - Using a try, catch block to asses if the input can be sliced (string method) 
+- Calculate sum button (= button )
+  - After a sum has been calculated, input the sum total is inputted back into the input box 
+  - Alert the user that the sum cannot be calculated
+    - E.g. 2 dots in the sum etc
+    - If the sum is not a number
+  - When inputting any number 0 to 9, 0 or 00. A function evaluates if the output input is empty 
+    - If it is, show the button selected
+    - If is is not, add the button on to the end of the input
