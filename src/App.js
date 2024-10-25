@@ -69,26 +69,6 @@ function calculate ( sum ) {
   currentCalc = eval(sum);
   document.getElementsByClassName('oldOutput')[0].innerHTML += ' = ' + sum;
   return eval( sum ) ;
-  // let answer = elevaluateNum( sum );
-  
-  // let calc = Number( eval( sum ) );
-
-  // alert( calc );
-  
-  // if ( isNaN(calc) ){
-    
-  // } else if ( calc == 0 ) {
-  //   return '0';
-  // } else if ( isNaN(calc) == false ) {
-  //   return calc ;
-  // } else {
-
-  // }
-  // else if (  ) {
-  //   alert('the fuck');
-    
-  // }
-  
 }
 
 function App() {
