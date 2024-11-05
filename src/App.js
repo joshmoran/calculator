@@ -1,9 +1,17 @@
 // Set favicon logo
+<<<<<<< HEAD
 import logo from './logo.svg';
 // Import CSS File
 import './App.css';
 // Import Modules for functionality
 import React, { useState, setValue } from 'react';
+=======
+// import logo from './logo.svg';
+// Import CSS File
+import './App.css';
+// Import Modules for functionality
+import React, { useState } from 'react';
+>>>>>>> c70f7fe (Bug fixing)
 
 // Set previous calculation to null 
 let currentCalc = '';
@@ -22,7 +30,11 @@ function checkEmpty( stringEl ) {
   let toString = String( stringEl );
 
   // Check if the string is not empty, null or undefined
+<<<<<<< HEAD
   if (  toString != '' || toString != null || toString != 'undefined') {
+=======
+  if (  toString !== '' || toString != null || toString !== 'undefined') {
+>>>>>>> c70f7fe (Bug fixing)
     // If not, try to remove the last character
     try { 
       // Remove the last character from the string and return the value
@@ -40,9 +52,15 @@ function checkEmpty( stringEl ) {
 // Function to check if the input is empty or has something in it 
 function checkValue ( currentVal, targetEl ) {
   // Check if the target element is empty or has something in it
+<<<<<<< HEAD
   if ( targetEl == '' || targetEl == null ) {
     // If it is, check if the previous calculation is not 0 and greater than 0 
     if ( currentCalc == 0 && currentCalc > 0 ){ 
+=======
+  if ( targetEl === '' || targetEl === null ) {
+    // If it is, check if the previous calculation is not 0 and greater than 0 
+    if ( currentCalc === 0 && currentCalc > 0 ){ 
+>>>>>>> c70f7fe (Bug fixing)
       // If it is, just return the current value being inputted
       return  currentVal;
     } else {
