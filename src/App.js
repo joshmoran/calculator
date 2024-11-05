@@ -3,10 +3,8 @@
 // Import CSS File
 import './App.css';
 // Import Modules for functionality
-import React, { useState, setValue } from 'react';
 // import logo from './logo.svg';
 // Import CSS File
-import './App.css';
 // Import Modules for functionality
 import React, { useState } from 'react';
 
@@ -27,8 +25,7 @@ function checkEmpty( stringEl ) {
   let toString = String( stringEl );
 
   // Check if the string is not empty, null or undefined
-  if (  toString != '' || toString != null || toString != 'undefined') {
-    if (  toString !== '' || toString != null || toString !== 'undefined') {
+  if (  toString !== '' || toString != null || toString !== 'undefined') {
     // If not, try to remove the last character
       try { 
         // Remove the last character from the string and return the value
@@ -42,7 +39,7 @@ function checkEmpty( stringEl ) {
       return currentCalc;
     }
 }
-}
+
 // Function to check if the input is empty or has something in it 
 function checkValue ( currentVal, targetEl ) {
   // Check if the target element is empty or has something in it
