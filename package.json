@@ -1,8 +1,6 @@
 {
   "name": "calculator",
   "version": "0.1.0",
-  "private": false,
-  "homepage": "https://joshmoran.github.io/calculator/",
   "private": true,
   "homepage": "https://joshkelly.cc/",
   "dependencies": {

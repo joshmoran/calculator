@@ -1,9 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
 import { BrowserRouter as Router } from 'react-router-dom';
-=======
 // import { BrowserRouter as Router } from 'react-router-dom';
->>>>>>> c70f7fe (Bug fixing)
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -21,11 +18,8 @@ root.render(
   // <React.StrictMode>
   // </React.StrictMode>
   // <Router basename="/projects/calculator/">
-<<<<<<< HEAD
     <App />
-=======
-    <App basename="/projects/calculator/base/"/>
->>>>>>> c70f7fe (Bug fixing)
+    //{/* <App basename="/projects/calculator/base/"/> */}
   // </Router>
 );
 
